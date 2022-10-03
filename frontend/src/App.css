@@ -1,0 +1,203 @@
+*{
+  margin:auto;
+  text-align: center;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #414141 #121212;
+}
+
+*::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #414141;
+  border-radius: 10px;
+}
+
+
+.App{
+  display: grid;
+  background: linear-gradient(133deg,rgba(133,201,169,0.1) 18%,rgba(113,191,155,0) 67%),#181623;
+  color: #d0d0d0;
+}
+
+.NavBarContainer{
+  height: 70px;
+  width: 100vw;
+  border-bottom: 1px solid #414141;
+  margin-bottom: 50px;
+  display: flex;
+  z-index: 1;
+}
+
+.FooterContainer{
+  height: 70px;
+  border-top: 1px solid #414141;
+  width: 100%;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+}
+.Links{
+  cursor: pointer;
+  margin: 0px 20px;
+}
+
+.BuyContainer{
+  min-height: calc(100vh - 192px);
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 140px auto;
+}
+
+.FilterContainer{
+  height: 100%;
+  width: 100%;
+}
+
+.ItemsContainer{
+  display:grid;
+  width: 70%;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
+  grid-auto-rows: 400px;
+  justify-content: space-evenly;
+}
+
+.error{
+  grid-column-start: 0;
+  grid-column-end: 3;
+}
+.FilterFixed{
+  left: 25px;
+  position: fixed;
+  height: calc(100vh - 200px);
+  display: grid;
+}
+.SortedElection{
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.Classes{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 20px;
+}
+.ClassesContainer{
+  margin-top: 50px;
+}
+
+.SortedP{
+  margin-bottom: 20px;
+}
+
+.Searcher{
+  background-color: transparent;
+  border: 1px solid #414141;
+  width: 80%;
+  height: 26px;
+  border-radius: 13px;
+  color: #d0d0d0;
+  background-color: #181623;
+}
+
+.Searcher:focus-visible{
+  outline: none;
+}
+.PriceP{
+  margin-bottom: 20px;
+}
+.NameP{
+  margin-bottom: 20px;
+}
+
+.MainContainer{
+  min-height: calc(100vh - 192px);
+  width: 100vw;
+}
+
+.MainContainer iframe{
+  height: 100vh;
+  width: 100vw;
+  border: none;
+}
+.ulNavBar{
+  width: 200px;
+  height: 100%;
+  display: flex;
+  padding-inline-start: 0;
+  margin-right: 100px;
+}
+
+.ulNavBar li{
+  cursor: pointer;
+}
+
+.ulNavBar li:hover{
+  color:white;
+}
+
+.MainContainer2{
+  width: 100vw;
+  min-height: calc(100vh);
+  background-color: rgba(21,21,21, 0.8);
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  place-content: center;
+}
+.BuyNavigate{
+  background-color: #f44454;
+  z-index: 3;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.Section2{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  opacity: 1;
+}
+
+.Section2Text{
+  display: grid;
+  width: 70%;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
+  grid-auto-rows: 33vh;
+  justify-content: space-evenly;
+}
+
+.Section2Text p{
+  font-size: 21px;
+  z-index: 2;
+  width: 300px; 
+}
+
+.Cart{
+  cursor: pointer;
+  position: fixed;
+  font-size: 30px;
+  right: 35px;
+  top: 130px;
+}
+
+.SortedElectionP:hover{
+  color:white
+}
+.Error{
+  min-height: calc(100vh - 71px);
+  width: 100vw;
+  display: grid;
+  place-content: center;
+}
+
+.Error img {
+  margin-top: 30px;
+  opacity: 0.5;
+}
