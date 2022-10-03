@@ -7,8 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon backend",
-    "start": "node backend",
-    "build": "npm install && cd frontend && npm install && npm run build && cd .."
+    "build": "npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "node backend"
   },
   "keywords": [],
   "author": "",
