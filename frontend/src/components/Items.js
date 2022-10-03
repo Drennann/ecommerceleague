@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import { motion } from "framer-motion";
-import { redirect } from "react-router-dom";
 
 export default function Items({ setItems, filteredItems }) {
   const [cart, setCart] = useState([]);
@@ -32,6 +31,8 @@ export default function Items({ setItems, filteredItems }) {
       });
 
       const result = await response.json();
+
+      console.log(result)
 
       window.location.href = result;
     } catch (e) {

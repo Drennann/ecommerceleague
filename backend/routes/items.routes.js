@@ -1,4 +1,3 @@
-import axios from "axios";
 import { Router } from "express";
 import { BuyItem } from "../controllers/itemsControllers.js";
 import { db } from "../db.js";
